@@ -2,9 +2,9 @@
 #include<stdio.h>
 
 void swap(int *ap, int *bp){
-      int temp = *ap;
-      *ap = *bp;
-      *bp = temp;
+    *ap = *ap + *bp;
+	*bp = *ap - *bp;
+	*ap = *ap - *bp;
 }
 
 //function to implement buuble Sort
